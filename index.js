@@ -2,12 +2,12 @@ const express = require('express')
 
 const app = express()
 
-app.get('/', (req, res) => {
-  res.send("hello from Eric's sick web app, version 1!")
+app.get('/:name', (req, res) => {
+  res.send(`Hello, ${req.params.name}, this is Eric's sick web app!`)
 })
 
 app.set('port', process.env.PORT || 3000)
 
 app.listen(app.get('port'), () => {
-  console.log(`Listening on port ${app.get('port')}!`)
+  console.log(`Listening on port ${app.get('port')}...`)
 })
