@@ -1,0 +1,26 @@
+{
+  "name": "spider",
+  "version": "1.0.0",
+  "description": "Da ting go... you know how it go",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lankster/spider.git"
+  },
+  "author": "Eric Morono",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lankster/spider/issues"
+  },
+  "homepage": "https://github.com/lankster/spider#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
