@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Da ting go... you know how it go",
   "main": "index.js",
+  "engines": {
+    "node":"8.9.1"
+  },
   "scripts": {
     "test": "standard",
     "start": "node index.js"
