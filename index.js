@@ -1,12 +1,11 @@
 const express = require('express')
+const setRoutes = require('./set-routes')
 
 const app = express()
 
-app.get('/:name?', (req, res) => {
-  res.send(`Hello, ${req.params.name || 'anonymous'}, this is Eric's sick web app!`)
-})
-
 app.set('port', process.env.PORT || 3000)
+
+setRoutes(app)
 
 app.listen(app.get('port'), () => {
   console.log(`Listening on port ${app.get('port')}...`)
